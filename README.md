@@ -81,7 +81,7 @@ beacon webhook send http://127.0.0.1:8402/beacon/inbox --kind hello
 beacon inbox list --limit 1
 ```
 
-## Quick Start
+## Basic Commands
 
 ```bash
 # Create your agent identity (Ed25519 keypair)
