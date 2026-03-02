@@ -4516,6 +4516,7 @@ def cmd_dashboard(args: argparse.Namespace) -> int:
 def main(argv: Optional[List[str]] = None) -> None:
     p = argparse.ArgumentParser(prog="beacon", description="Beacon 2.4.0 - autonomous agent economy: presence, trust, feed, rules, tasks, memory, outbox, executor, mayday, heartbeat, accord")
     p.add_argument("--version", action="version", version=__version__)
+    p.add_argument("--json", action="store_true", help="Output results as JSON (for scripting and piping)")
     sub = p.add_subparsers(dest="cmd", required=True)
 
     # init
